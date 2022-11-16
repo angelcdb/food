@@ -29,12 +29,13 @@ main{
     align-items: center;
     flex-wrap: wrap;
     margin-right: 20px;
+    padding: 0;
 }
 .navbar ul li{
     border: 1px solid white;
     border-radius: 5px;
     font-size: 20px;
-    padding: 5px;
+    padding: 3px;
     margin: 1px 2px;
     list-style: none;
     cursor: pointer;
@@ -77,7 +78,7 @@ main{
     margin-bottom: 50px;
 }
 .info .botom{
-    margin-left: 100px;
+    margin: 10px 80px;
     border: 2px solid seagreen;
     border-radius: 8px;
     background-color: paleturquoise;
