@@ -1,0 +1,258 @@
+* {
+  font-family: "Times New Roman", Times, serif;
+}
+body {
+  /* background-color: papayawhip; */
+  margin: 0;
+  padding: 0;
+}
+main {
+  max-width: 100%;
+  margin: 0;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 90px;
+}
+.header {
+  display: flexbox;
+  margin-bottom: 100px;
+}
+.navbar .logo {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  margin: 10px 10px 10px 0;
+}
+.navbar-toggler {
+  margin-bottom: 20px;
+}
+.navbar ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbar ul li {
+  font-size: 20px;
+  padding: 2px;
+  margin: 2px;
+  list-style: none;
+  cursor: pointer;
+}
+.navbar ul li a {
+  text-decoration: none;
+  color: grey;
+}
+.navbar ul li a:hover {
+  color: white;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: minmax(300px, 2fr) 3fr;
+  grid-auto-rows: 550px;
+  margin: 0 20px 40px;
+}
+
+.hero-img {
+  margin-top: 20px;
+  width: 100%;
+  height: 100%;
+  flex-wrap: wrap;
+  object-fit: contain; /*Hace que la imagen se ajuste al espacio
+    que esta ocupando, para que se vea completa*/
+}
+.info {
+  align-self: center;
+  /* margin-top: 100px; */
+}
+.info .title {
+  color: seagreen;
+  font-size: 60px;
+  margin: 20px 0 40px 0;
+}
+.info p {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+.button {
+  display: flex;
+  justify-content: center;
+}
+.botom__reservation {
+  border: 2px solid seagreen;
+  border-radius: 8px;
+  background-color: paleturquoise;
+  font-size: 15px;
+  cursor: pointer;
+  padding: 12px;
+}
+.info .botom__reservation a {
+  text-decoration: none;
+  color: rgb(23, 46, 148);
+}
+.info .botom__reservation:hover {
+  background-color: rgb(209, 159, 121);
+}
+.platos {
+  margin: 100px 0;
+}
+.platos__title {
+  color: rgb(94, 199, 140);
+  /* box-shadow: rgb(96, 101, 121); */
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  margin: 40px 0 30px 0;
+}
+
+.platos__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(75px, 200px));
+  grid-auto-rows: 1fr;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+.plato-item {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /*Para que las img se vean de calidad, en su estado normal (Sin encogerse)*/
+  border: 1px solid green;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.plato-item__big {
+  grid-area: 1 / 1 / 3 / 3;
+}
+
+.menu {
+  margin-bottom: 100px;
+}
+.menu__title {
+  font-size: 40px;
+  color: rgb(94, 199, 140);
+  font-weight: bolder;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.menu__grid {
+  display: grid;
+  /* gap: 10px;
+    align-content: center;
+    height: 800px;
+    grid-template-columns: minmax(50px, 100px) minmax(50px, auto);
+    grid-template-rows: 50px; */
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, 150px);
+  gap: 25px;
+}
+.menu__grid--item img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  cursor: pointer;
+}
+.menu__grid--item {
+  background-color: rgb(240, 201, 168);
+  padding: 15px;
+  border-top-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  border: 1px solid green;
+}
+.menu__grid--item:hover {
+  background-color: rgb(209, 159, 121);
+}
+
+/*Footer*/
+
+/* .footer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  height: 20rem;
+  background-color: rgb(161, 108, 108);
+  margin-top: 5rem;
+}
+
+.footer ul {
+  display: flex;
+  list-style: none;
+  padding: 0px;
+}
+.footer .pp {
+  padding: 0;
+  font-size: 1.1rem;
+}
+.footer ul li img {
+  width: 2.5rem;
+  height: 2.5rem;
+  margin: 10px;
+  padding: 0;
+} */
+.footer {
+  background-color: rgb(199, 167, 167);
+}
+.col {
+  margin-top: 10px;
+  height: 12rem;
+}
+.col ul {
+  justify-content: start;
+}
+i {
+  font-size: 20px;
+}
+h5 {
+  font-size: 20px;
+  font-weight: bold;
+  color: rgb(161, 108, 108);
+  margin: 10px 0;
+}
+@media (max-width: 600px) {
+  .header {
+    width: 100%;
+    height: 100px;
+  }
+  .navbar {
+    width: 100%;
+    height: 100px;
+  }
+  .navbar ul {
+    width: 100vh;
+    height: 100px;
+    margin-top: 2px;
+  }
+  .navbar ul li a {
+    width: 60px;
+    height: 20px;
+    font-size: 16px;
+  }
+  .logo {
+    margin-bottom: 10px;
+  }
+  .hero {
+    grid-template-columns: minmax(300px, 500px);
+    justify-content: center;
+  }
+  .hero-img {
+    display: none;
+  }
+  .platos__grid {
+    grid-template-columns: repeat(auto-fit, minmax(75px, 100px));
+  }
+  .menu-grid-item {
+    width: 120px;
+    height: 120px;
+    margin: 5px;
+  }
+
+  .footer ul li a img {
+    width: 2rem;
+    height: 2rem;
+    margin: 10px;
+  }
+}
