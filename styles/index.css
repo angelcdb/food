@@ -49,37 +49,42 @@ main {
   color: white;
 }
 
-.hero {
+/* .hero {
   display: grid;
   grid-template-columns: minmax(300px, 2fr) 3fr;
   grid-auto-rows: 550px;
   margin: 0 20px 40px;
-}
+} */
 
 .hero-img {
-  margin-top: 20px;
+  /* margin-top: 20px; */
+
   width: 100%;
   height: 100%;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   object-fit: contain; /*Hace que la imagen se ajuste al espacio
     que esta ocupando, para que se vea completa*/
+  /* grid-template-columns: minmax(300px, 2fr) 3fr; */
+  /* grid-auto-rows: 550px; */
 }
-.info {
+/* .info {
   align-self: center;
-  /* margin-top: 100px; */
-}
-.info .title {
+  margin-top: 100px;
+} */
+.title {
   color: seagreen;
   font-size: 60px;
   margin: 20px 0 40px 0;
 }
-.info p {
+.parrafo {
+  flex-wrap: wrap;
   font-size: 20px;
   margin-bottom: 30px;
 }
 .button {
   display: flex;
   justify-content: center;
+  margin: 40px;
 }
 .botom__reservation {
   border: 2px solid seagreen;
@@ -89,9 +94,9 @@ main {
   cursor: pointer;
   padding: 12px;
 }
-.info .botom__reservation a {
+.botom__reservation a {
   text-decoration: none;
-  color: rgb(23, 46, 148);
+  color: black;
 }
 .info .botom__reservation:hover {
   background-color: rgb(209, 159, 121);
@@ -154,6 +159,7 @@ main {
   height: 100%;
   object-fit: contain;
   cursor: pointer;
+  border-radius: 90px;
 }
 .menu__grid--item {
   background-color: rgb(240, 201, 168);
@@ -167,7 +173,6 @@ main {
 }
 
 /*Footer*/
-
 /* .footer {
   display: flex;
   justify-content: space-evenly;
@@ -193,27 +198,40 @@ main {
   margin: 10px;
   padding: 0;
 } */
+
 .footer {
   background-color: rgb(199, 167, 167);
+  /* background: url(/assets/pastas/7.jpeg) center top no-repeat; */
+  /* background-size: cover; */
+  /* opacity: 0.7; */
 }
+
 .col {
   margin-top: 10px;
   height: 12rem;
 }
-.col ul {
-  justify-content: start;
+
+ul {
+  font-size: 20px;
+  margin-left: -40px;
 }
 i {
-  font-size: 20px;
+  font-size: 25px;
 }
 h5 {
-  font-size: 20px;
+  font-size: 25px;
   font-weight: bold;
   color: rgb(161, 108, 108);
-  margin: 10px 0;
+  margin: 15px 0;
 }
-@media (max-width: 600px) {
-  .header {
+.copyright {
+  font-size: 20px;
+}
+a {
+  color: black;
+}
+@media (max-width: 575px) {
+  /* .header {
     width: 100%;
     height: 100px;
   }
@@ -233,11 +251,11 @@ h5 {
   }
   .logo {
     margin-bottom: 10px;
-  }
-  .hero {
+  } */
+  /* .hero {
     grid-template-columns: minmax(300px, 500px);
     justify-content: center;
-  }
+  } */
   .hero-img {
     display: none;
   }
