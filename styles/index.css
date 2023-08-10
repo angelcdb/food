@@ -17,11 +17,11 @@ main {
 } */
 .header {
   /* display: flexbox; */
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 .navbar .logo {
-  width: 80px;
-  height: 80px;
+  width: 100px;
+  height: 100px;
   object-fit: cover;
   margin: 10px 10px 10px 0;
 }
@@ -34,7 +34,6 @@ main {
 }
 .navbar ul li {
   font-size: 20px;
-  /* padding: 2px; */
   margin: 2px;
   list-style: none;
   cursor: pointer;
@@ -66,14 +65,11 @@ main {
   /* grid-template-columns: minmax(300px, 2fr) 3fr; */
   /* grid-auto-rows: 550px; */
 }
-/* .info {
-  align-self: center;
-  margin-top: 100px;
-} */
+
 .title {
   color: seagreen;
   font-size: 60px;
-  margin: 20px 0 40px 0;
+  margin: 0 0 40px 0;
 }
 .parrafo {
   flex-wrap: wrap;
@@ -89,16 +85,16 @@ main {
   border: 2px solid seagreen;
   border-radius: 8px;
   background-color: paleturquoise;
-  font-size: 15px;
+  font-size: 16px;
   cursor: pointer;
-  padding: 12px;
+  padding: 10px;
 }
 .botom__reservation a {
   text-decoration: none;
   color: black;
 }
-.info .botom__reservation:hover {
-  background-color: rgb(209, 159, 121);
+.botom__reservation:hover {
+  background-color: rgb(232, 205, 184);
 }
 #productos {
   margin-top: 50px;
@@ -224,9 +220,6 @@ main {
 
 .footer {
   background-color: rgb(199, 167, 167);
-  /* background: url(/assets/pastas/7.jpeg) center top no-repeat; */
-  /* background-size: cover; */
-  /* opacity: 0.7; */
 }
 
 .col {
@@ -236,7 +229,8 @@ main {
 
 ul {
   font-size: 20px;
-  margin-left: -40px;
+  margin: 0;
+  margin-left: -30px;
 }
 i {
   font-size: 25px;
@@ -247,7 +241,14 @@ h5 {
   color: rgb(161, 108, 108);
   margin: 15px 0;
 }
+.redes__sociales {
+  margin-left: -30px;
+}
+.resdes__personales {
+  margin-left: 0px;
+}
 .copyright {
+  margin: 10px 0;
   font-size: 20px;
 }
 a {
@@ -285,7 +286,7 @@ a {
   .foods__grid {
     grid-template-columns: repeat(auto-fit, minmax(75px, 100px));
   }
-  .menu-grid-item {
+  /* .menu-grid-item {
     width: 120px;
     height: 120px;
     margin: 5px;
@@ -295,5 +296,5 @@ a {
     width: 2rem;
     height: 2rem;
     margin: 10px;
-  }
+  } */
 }
