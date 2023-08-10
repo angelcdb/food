@@ -2,7 +2,6 @@
   font-family: "Times New Roman", Times, serif;
 }
 body {
-  /* background-color: papayawhip; */
   margin: 0;
   padding: 0;
 }
@@ -10,14 +9,14 @@ main {
   max-width: 100%;
   margin: 0;
 }
-.navbar {
+/* .navbar {
   display: flex;
   justify-content: space-between;
   width: 100%;
   height: 90px;
-}
+} */
 .header {
-  display: flexbox;
+  /* display: flexbox; */
   margin-bottom: 100px;
 }
 .navbar .logo {
@@ -26,22 +25,22 @@ main {
   object-fit: cover;
   margin: 10px 10px 10px 0;
 }
-.navbar-toggler {
-  margin-bottom: 20px;
-}
+/* .navbar-toggler {
+  margin-bottom: 10px;
+} */
 .navbar ul {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  align-items: end;
 }
 .navbar ul li {
   font-size: 20px;
-  padding: 2px;
+  /* padding: 2px; */
   margin: 2px;
   list-style: none;
   cursor: pointer;
 }
 .navbar ul li a {
+  padding: 0;
   text-decoration: none;
   color: grey;
 }
@@ -101,10 +100,34 @@ main {
 .info .botom__reservation:hover {
   background-color: rgb(209, 159, 121);
 }
-.platos {
+#productos {
+  margin-top: 50px;
+}
+/*Card*/
+.card {
+  display: flex;
+  margin: 20px 0;
+  box-shadow: 6px 6px 6px 5px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+.card:hover {
+  background-color: rgb(231, 255, 235);
+}
+.card__img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+.card__text {
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.foods {
   margin: 100px 0;
 }
-.platos__title {
+.foods__title {
   color: rgb(94, 199, 140);
   /* box-shadow: rgb(96, 101, 121); */
   font-size: 40px;
@@ -113,7 +136,7 @@ main {
   margin: 40px 0 30px 0;
 }
 
-.platos__grid {
+.foods__grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(75px, 200px));
   grid-auto-rows: 1fr;
@@ -121,7 +144,7 @@ main {
   justify-content: center;
   margin-bottom: 100px;
 }
-.plato-item {
+.food-item {
   width: 100%;
   height: 100%;
   object-fit: cover; /*Para que las img se vean de calidad, en su estado normal (Sin encogerse)*/
@@ -129,7 +152,7 @@ main {
   border-radius: 20px;
   cursor: pointer;
 }
-.plato-item__big {
+.food-item__big {
   grid-area: 1 / 1 / 3 / 3;
 }
 
@@ -259,7 +282,7 @@ a {
   .hero-img {
     display: none;
   }
-  .platos__grid {
+  .foods__grid {
     grid-template-columns: repeat(auto-fit, minmax(75px, 100px));
   }
   .menu-grid-item {

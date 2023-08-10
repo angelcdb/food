@@ -23,9 +23,9 @@
  <main>
   <header class="header">
    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-    <div class="container">
+    <div class="container-fluid">
      <a class="navbar-brand" href="#">
-      <!-- <img class="logo" src="./assets/Logo/logo.png" alt="Logo" /> -->
+      <img class="logo" src="./assets/Logo/logo.png" alt="Logo" />
       Angels
      </a>
      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar"
@@ -35,7 +35,10 @@
      <div class="collapse navbar-collapse" id="navbar">
       <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
        <li class="nav-item">
-        <a class="nav-link" href="#main">Inicio</a>
+        <a class="nav-link" href="#productos">Productos</a>
+       </li>
+       <li class="nav-item">
+        <a class="nav-link" href="#recetas">Recetas</a>
        </li>
        <li class="nav-item">
         <a class="nav-link" href="#servicios">Servicios</a>
@@ -46,10 +49,10 @@
        <li class="nav-item">
         <a class="nav-link" href="#contacto">Contacto</a>
        </li>
-       <li class="nav-item">
+       <!-- <li class="nav-item">
         <a class="nav-link text-ticket" href="#modalCompra" data-bs-toggle="modal"
          data-bs-target="#modalCompra">Comprar</a>
-       </li>
+       </li> -->
       </ul>
      </div>
     </div>
@@ -75,7 +78,7 @@
      Si buscas una cena elegante o una rica pasta para llevar, nosotros podemos ayudarte.
      Nuestros ingredientes son los más frescos y nuestros chefs son expertos en cocina italiana y
      mediterránea.
-     En nuestra carta ofertamos una gran variedad de platos de la cocina tradicional italiana como la
+     En nuestra carta ofertamos una gran variedad de foods de la cocina tradicional italiana como la
      pasta,
      bebidas y postres. Si quieres hacer un pedido, o deseas reservar una mesa, por favor contáctanos hoy
      mismo al
@@ -99,7 +102,7 @@
       Si buscas una cena elegante o una rica pasta para llevar, nosotros podemos ayudarte.
       Nuestros ingredientes son los más frescos y nuestros chefs son expertos en cocina italiana y
       mediterránea.
-      En nuestra carta ofertamos una gran variedad de platos de la cocina tradicional italiana como la
+      En nuestra carta ofertamos una gran variedad de foods de la cocina tradicional italiana como la
       pasta,
       bebidas y postres. Si quieres hacer un pedido, o deseas reservar una mesa, por favor contáctanos hoy
       mismo al
@@ -116,16 +119,52 @@
    <!-- </div> -->
   </div>
 
+  <div class="container-fluid" id="productos">
+   <h2 class="text-center  foods__title">Nuestros Productos son 100% Artesanales</h2>
+   <div class="row">
 
+    <div class="col-md-4 col-sm-6">
+     <div class="card">
+      <img src="./assets/images/1.png" class="card__img" alt="foto-pasta">
+      <div class="card-body">
+       <p class="card__text">
+        Raviolis
+       </p>
+      </div>
+     </div>
+    </div>
 
-  <section class="platos">
-   <h2 class="platos__title" id="servicios">Nuestros Servicios</h2>
-   <div class="platos__grid">
-    <img class="plato-item plato-item__big" src="./assets/images/video.png" alt="mesa con platos">
-    <img class="plato-item" src="./assets/images/dish1.png" alt="Bold de vegetales">
-    <img class="plato-item" src="./assets/images/dish2.png" alt="">
-    <img class="plato-item" src="./assets/images/dish3.png" alt="">
-    <img class="plato-item" src="./assets/images/dish4.png" alt="">
+    <div class="col-md-4 col-sm-6">
+     <div class="card">
+      <img src="./assets/images/2.png" class="card__img" alt="foto-">
+      <div class="card-body">
+       <p class="card__text">
+        Diferentes tipos de formas y sabores
+       </p>
+      </div>
+     </div>
+    </div>
+    <div class="col-md-4 col-sm-6">
+     <div class="card">
+      <img src="./assets/images/3.png" class="card__img" alt="foto-">
+      <div class="card-body">
+       <p class="card__text">
+        Elaborados con los mejores Chefs de nuestra ciudad
+       </p>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+
+  <section class="food">
+   <h2 class="foods__title" id="servicios">Nuestros Servicios</h2>
+   <div class="foods__grid">
+    <img class="food-item food-item__big" src="./assets/images/video.png" alt="mesa con foods">
+    <img class="food-item" src="./assets/images/dish1.png" alt="food">
+    <img class="food-item" src="./assets/images/dish2.png" alt="food">
+    <img class="food-item" src="./assets/images/dish3.png" alt="food">
+    <img class="food-item" src="./assets/images/dish4.png" alt="food">
    </div>
   </section>
 
@@ -133,22 +172,22 @@
    <h2 class="menu__title" id="menu">Menú</h2>
    <div class="menu__grid">
     <div class="menu__grid--item">
-     <img src="./assets/images/plate1.png" alt="plato de comida">
+     <img src="./assets/images/plate1.png" alt="food">
     </div>
     <div class="menu__grid--item">
-     <img src="./assets/images/plate2.png" alt="plato de comida">
+     <img src="./assets/images/plate2.png" alt="food">
     </div>
     <div class="menu__grid--item">
-     <img src="./assets/images/plate3.png" alt="plato de comida">
+     <img src="./assets/images/plate3.png" alt="food">
     </div>
     <div class="menu__grid--item">
-     <img src="./assets/images/plate4.png" alt="plato de comida">
+     <img src="./assets/images/plate4.png" alt="food">
     </div>
     <div class="menu__grid--item">
-     <img src="./assets/images/plate5.png" alt="plato de comida">
+     <img src="./assets/images/plate5.png" alt="food">
     </div>
     <div class="menu__grid--item">
-     <img src="./assets/images/plate6.png" alt="plato de comida">
+     <img src="./assets/images/plate6.png" alt="food">
     </div>
    </div>
   </section>
